@@ -1,0 +1,34 @@
+{
+	"name": "DS_SalesLTIncomesPerStates",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "StateAbbreviation",
+				"type": "nvarchar"
+			},
+			{
+				"name": "StateName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "StateIncome",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "BatchID",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "IncomesPerStates"
+		}
+	}
+}
