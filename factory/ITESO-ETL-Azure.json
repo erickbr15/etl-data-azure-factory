@@ -1,0 +1,9 @@
+{
+	"name": "ITESO-ETL-Azure",
+	"location": "southcentralus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "3d684f84-f6d8-4636-82cb-a4627874c10b",
+		"tenantId": "b0703824-a4dd-4879-81dc-761426e4417b"
+	}
+}

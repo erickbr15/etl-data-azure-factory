@@ -1,0 +1,13 @@
+{
+	"name": "LNK_StatesIncomeData",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://www.irs.gov/pub/irs-soi/17zpallnoagi.csv",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}

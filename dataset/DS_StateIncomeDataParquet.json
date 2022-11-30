@@ -1,0 +1,22 @@
+{
+	"name": "DS_StateIncomeDataParquet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LNK_ETLInAzure",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "stateIncomeData.parquet",
+				"folderPath": "stateIncomeData",
+				"container": "adf"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
